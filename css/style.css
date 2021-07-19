@@ -1,0 +1,149 @@
+:root {
+    --main-color: #451400;
+    --secondry-color: #fff;
+}
+
+.navbar {
+    background-color: var(--secondry-color)
+}
+
+.navbar .brand {
+    width: 310px;
+}
+
+.navbar .navbar-brand img {
+    width: 40%;
+}
+
+.navbar .sign-in {
+    text-decoration: none;
+    color: #635852;
+    font-size: 19px;
+    text-transform: uppercase;
+}
+
+.navbar .sign-in i {
+    padding-right: 4px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    font-size: 22px;
+    padding-left: 20px;
+    font-weight: bold;
+    color: var(--main-color);
+    transition: all .1s ease-in;
+
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    color: #ad2118;
+    transition: all .1s ease-in-out;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover span {
+    border-bottom: 3px solid #ad2118;
+    transition: all .1s ease-in;
+}
+
+.navbar .find-Chipotle button {
+    background-color: var(--main-color);
+    color: var(--secondry-color);
+}
+
+.navbar .find-Chipotle button span {
+    padding-left: 5px;
+    border-left: 1px solid #fff;
+}
+
+.navbar .find-Chipotle button i {
+    padding-right: 5px;
+}
+
+
+
+header .hero-section video {
+    object-fit: cover;
+    width: 100%;
+    min-height: 450px;
+}
+
+
+.restaurant-food {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.restaurant-food .restaurant-food-item {
+    padding-bottom: 40px;
+}
+
+.restaurant-food .restaurant-food-item img {
+    width: 100%;
+}
+
+.advertisement {
+    padding-top: 40px;
+    padding-bottom: 40px
+}
+
+.advertisement .advertisement-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.advertisement video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tap-order {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: url('../images/pattern-ingredients.svg');
+}
+
+.tap-order button {
+    margin-bottom: 20px;
+}
+
+.tap-order img {
+    width: 100%;
+}
+
+.crowd-pleasers {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.crowd-pleasers .crowd-pleasers-item .crowd-pleasers-item-catering-header {
+    background: url('../images/A_Catering-Tile_570x190@2x.jpg');
+    background-size: 100% 190px;
+    background-repeat: no-repeat;
+    min-height: 200px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.crowd-pleasers .crowd-pleasers-item .crowd-pleasers-item-groupOrder-header {
+    background: url('../images/Group-Ordering-Tile_570x190@2x.jpg');
+    background-size: 100% 190px;
+    background-repeat: no-repeat;
+    min-height: 200px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.crowd-pleasers .crowd-pleasers-item button {
+    background-color: #A76721;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    border-radius: 0;
+    padding: 10px 30px;
+}
+
+.crowd-pleasers ul {
+    padding: 0;
+}
