@@ -3,8 +3,15 @@
     --secondry-color: #fff;
 }
 
+
 .navbar {
-    background-color: var(--secondry-color)
+    background-color: var(--secondry-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+
 }
 
 .navbar .brand {
@@ -65,6 +72,7 @@ header .hero-section video {
     object-fit: cover;
     width: 100%;
     min-height: 450px;
+    margin-top: 160px;
 }
 
 
@@ -146,4 +154,215 @@ header .hero-section video {
 
 .crowd-pleasers ul {
     padding: 0;
+}
+
+footer {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    background-color: #1B0800;
+    color: #fff;
+}
+
+footer .contact-support {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+footer h2 {
+    padding: 20px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer ul li a i {
+    font-size: 27px;
+    background-color: #786259;
+    padding: 10px;
+}
+
+
+footer .copyRight {
+    padding: 40px 0 0;
+}
+
+footer ul li a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* ######################### Gatering Page ######################### */
+.catering-hero-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 160px;
+
+}
+
+.catering-hero-section h1 {
+    color: #451400;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.catering-hero-section img {
+    width: 100%;
+}
+
+.catering-hero-section .countOfPeople {
+    font-size: 13px;
+    color: #9d8d80;
+    text-align: center;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+.catering-hero-section p,
+.catering-hero-section span {
+    font-size: 13px;
+    font-weight: normal;
+}
+
+
+.catering-hero-section button {
+    background-color: #C08B15;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    transition: all .3s ease-in;
+}
+
+.catering-hero-section button:hover {
+    background-color: #57400f;
+    color: #fff;
+}
+
+.popular-builds {
+    padding: 40px 0;
+    color: #fff;
+    background-color: #786259;
+
+}
+
+.popular-builds .popular-builds-item {
+    background-color: #fff;
+}
+
+.popular-builds .popular-builds-item .popular-builds-item-header {
+    color: #fff;
+}
+
+.popular-builds .popular-builds-item .popular-builds-item-header .popular-builds-item-header-title {
+    bottom: 10px;
+    padding: 0 3px;
+}
+
+.popular-builds .popular-builds-item .popular-builds-item-header img {
+    width: 100%;
+}
+
+.popular-builds .popular-builds-item .popular-builds-item-footer {
+    color: #000;
+    padding: 3px 10px;
+}
+
+.popular-builds .popular-builds-item .popular-builds-item-footer button {
+    background-color: #C08B15;
+    color: #fff;
+    width: 100%;
+    font-weight: bold;
+}
+
+.popular-builds .popular-builds-item .popular-builds-item-footer p {
+    font-size: 13px;
+    color: #9d8d80;
+}
+
+.popular-builds .popular-builds-item .popular-builds-item-footer div p span {
+    font-size: 15px;
+    color: #000;
+    font-weight: bold;
+}
+
+.bulid-your-own {
+    background-color: #F2F2F1;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.bulid-your-own h3 {
+    margin-top: -40px;
+    font-size: 150px;
+    color: #451400;
+    font-weight: bold
+}
+
+.bulid-your-own .single-value {
+    background-color: #fff;
+}
+
+.bulid-your-own .best-values {
+    background-color: #C08B15;
+    color: #fff;
+    padding: 5px 10px;
+
+}
+
+.bulid-your-own .bulid-your-single button {
+    background-color: #C08B15;
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+}
+
+.bulid-your-own .bulid-your-single img {
+    width: 100%;
+}
+
+.chips-dips {
+    background-color: #E8E8E5;
+}
+
+.chips-dips h2 {
+    color: #451400;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.chips-dips button {
+    background-color: #C08B15;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.chips-dips img {
+    width: 60%;
+}
+
+.team-today {
+    color: #fff;
+    background-image: url('../images/group-order-large.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 320px;
+    background-size: cover
+}
+
+.team-today a {
+    color: #C08B15;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
 }

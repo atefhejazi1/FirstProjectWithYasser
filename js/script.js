@@ -1,0 +1,1 @@
+document.querySelector('.copyRightReserved').innerText = new Date().getFullYear()
