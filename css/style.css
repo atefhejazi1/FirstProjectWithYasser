@@ -1,368 +1,919 @@
 :root {
-    --main-color: #451400;
-    --secondry-color: #fff;
+  --main-color: #451400;
+  --secondry-color: #fff;
 }
 
+body {
+  overflow-x: hidden;
+}
 
 .navbar {
-    background-color: var(--secondry-color);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
+  background-color: var(--secondry-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  flex-wrap: nowrap;
+}
 
+@media (max-width: 768px) {
+  .navbar button {
+    margin-right: 40px;
+  }
 }
 
 .navbar .brand {
-    width: 310px;
+  width: 310px;
 }
 
 .navbar .navbar-brand img {
-    width: 40%;
+  width: 40%;
 }
 
 .navbar .sign-in {
-    text-decoration: none;
-    color: #635852;
-    font-size: 19px;
-    text-transform: uppercase;
+  text-decoration: none;
+  color: #635852;
+  font-size: 19px;
+  text-transform: uppercase;
 }
 
 .navbar .sign-in i {
-    padding-right: 4px;
+  padding-right: 4px;
 }
 
 .navbar .navbar-nav .nav-item .nav-link {
-    font-size: 22px;
-    padding-left: 20px;
-    font-weight: bold;
-    color: var(--main-color);
-    transition: all .1s ease-in;
-
+  font-size: 22px;
+  padding-left: 20px;
+  font-weight: bold;
+  color: var(--main-color);
+  transition: all 0.1s ease-in;
 }
 
 .navbar .navbar-nav .nav-item .nav-link:hover {
-    color: #ad2118;
-    transition: all .1s ease-in-out;
+  color: #ad2118;
+  transition: all 0.1s ease-in-out;
 }
 
 .navbar .navbar-nav .nav-item .nav-link:hover span {
-    border-bottom: 3px solid #ad2118;
-    transition: all .1s ease-in;
+  border-bottom: 3px solid #ad2118;
+  transition: all 0.1s ease-in;
 }
 
 .navbar .find-Chipotle button {
-    background-color: var(--main-color);
-    color: var(--secondry-color);
+  background-color: var(--main-color);
+  color: var(--secondry-color);
 }
 
 .navbar .find-Chipotle button span {
-    padding-left: 5px;
-    border-left: 1px solid #fff;
+  padding-left: 5px;
+  border-left: 1px solid #fff;
 }
 
 .navbar .find-Chipotle button i {
-    padding-right: 5px;
+  padding-right: 5px;
 }
-
-
 
 header .hero-section video {
-    object-fit: cover;
-    width: 100%;
-    min-height: 450px;
-    margin-top: 160px;
+  object-fit: cover;
+  width: 100%;
+  min-height: 450px;
+  margin-top: 160px;
+  position: relative;
 }
 
-
 .restaurant-food {
-    padding-top: 40px;
-    padding-bottom: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .restaurant-food .restaurant-food-item {
-    padding-bottom: 40px;
+  padding-bottom: 40px;
+  transition: all 0.3s ease-in-out;
+}
+
+.restaurant-food .restaurant-food-item h4 {
+  color: #b68207;
+  font-weight: 700;
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.restaurant-food .restaurant-food-item:hover h4 {
+  display: block;
 }
 
 .restaurant-food .restaurant-food-item img {
-    width: 100%;
+  width: 100%;
+}
+
+.restaurant-food .restaurant-food-item:hover img {
+  display: block;
+  width: 110%;
 }
 
 .advertisement {
-    padding-top: 40px;
-    padding-bottom: 40px
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .advertisement .advertisement-item {
-    border: 1px solid #ccc;
-    padding: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.advertisement .advertisement-item h2 {
+  color: #451400;
+}
+
+.advertisement .advertisement-item button {
+  color: #fff;
+  font-weight: bold;
+  background-color: #451400;
+}
+
+.advertisement .advertisement-item-header {
+  margin-bottom: 15px;
 }
 
 .advertisement video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  min-height: 400px;
+  object-fit: cover;
 }
 
 .tap-order {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background: url('../images/pattern-ingredients.svg');
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: url("../images/pattern-ingredients.svg");
+}
+
+.tap-order h2 {
+  color: #451400;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.tap-order p {
+  color: #451400;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.tap-order .tap-order-item {
+  margin-bottom: 15px;
+  background-color: #fff;
+  padding-bottom: 10px;
+}
+
+.tap-order .tap-order-item h3 {
+  font-size: 20px;
+  color: #451400;
+  padding-top: 10px;
 }
 
 .tap-order button {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  background-color: #451400;
+  color: #fff;
+  border: 0;
+  border-radius: 0;
+  padding: 10px 30px;
 }
 
 .tap-order img {
-    width: 100%;
+  width: 100%;
 }
 
 .crowd-pleasers {
-    padding-top: 40px;
-    padding-bottom: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.crowd-pleasers .crowd-pleasers-item {
+  box-shadow: 0 0 14px 2px rgb(0 0 0 / 20%);
+  margin-bottom: 20px;
 }
 
 .crowd-pleasers .crowd-pleasers-item .crowd-pleasers-item-catering-header {
-    background: url('../images/A_Catering-Tile_570x190@2x.jpg');
-    background-size: 100% 190px;
-    background-repeat: no-repeat;
-    min-height: 200px;
-    color: #fff;
-    font-weight: bold;
+  background: url("../images/A_Catering-Tile_570x190@2x.jpg");
+  /* background-size: 100% 190px; */
+  background-size: 100% 190px;
+  background-repeat: no-repeat;
+  min-height: 200px;
+  color: #fff;
+  font-weight: bold;
 }
 
 .crowd-pleasers .crowd-pleasers-item .crowd-pleasers-item-groupOrder-header {
-    background: url('../images/Group-Ordering-Tile_570x190@2x.jpg');
-    background-size: 100% 190px;
-    background-repeat: no-repeat;
-    min-height: 200px;
-    color: #fff;
-    font-weight: bold;
+  background: url("../images/Group-Ordering-Tile_570x190@2x.jpg");
+  background-size: 100% 190px;
+  background-repeat: no-repeat;
+  min-height: 200px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.crowd-pleasers .crowd-pleasers-item .crowd-pleasers-item-catering-footer {
+  padding: 10px;
+}
+
+.crowd-pleasers .crowd-pleasers-item .crowd-pleasers-item-catering-footer p {
+  font-weight: bold;
+  color: #786259;
+  font-size: 18px;
 }
 
 .crowd-pleasers .crowd-pleasers-item button {
-    background-color: #A76721;
-    color: #fff;
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 20px;
-    border-radius: 0;
-    padding: 10px 30px;
+  background-color: #a76721;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  border-radius: 0;
+  padding: 10px 30px;
+  margin-bottom: 10px;
 }
 
 .crowd-pleasers ul {
-    padding: 0;
+  padding: 0;
 }
 
 footer {
-    padding-top: 40px;
-    padding-bottom: 10px;
-    background-color: #1B0800;
-    color: #fff;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  background-color: #1b0800;
+  color: #fff;
 }
 
 footer .contact-support {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
 }
 
 footer h2 {
-    padding: 20px 0;
+  padding: 20px 0;
 }
 
 footer a {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
 footer a:hover {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
 footer ul li a i {
-    font-size: 27px;
-    background-color: #786259;
-    padding: 10px;
+  font-size: 27px;
+  background-color: #786259;
+  padding: 10px;
 }
 
-
 footer .copyRight {
-    padding: 40px 0 0;
+  padding: 10px;
 }
 
 footer ul li a:hover {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
 /* ######################### Gatering Page ######################### */
 .catering-hero-section {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    margin-top: 160px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 160px;
+}
 
+.catering-hero-section .catering-hero-section-image {
+  margin-bottom: 30px;
 }
 
 .catering-hero-section h1 {
-    color: #451400;
-    font-size: 60px;
-    font-weight: bold;
+  color: #451400;
+  font-size: 60px;
+  font-weight: bold;
 }
 
 .catering-hero-section img {
-    width: 100%;
+  width: 100%;
 }
 
 .catering-hero-section .countOfPeople {
-    font-size: 13px;
-    color: #9d8d80;
-    text-align: center;
+  font-size: 15px;
+  color: #9d8d80;
+  text-align: center;
+  font-weight: bold;
 }
 
 h3 {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .catering-hero-section p,
 .catering-hero-section span {
-    font-size: 13px;
-    font-weight: normal;
+  font-size: 13px;
+  font-weight: normal;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-
 .catering-hero-section button {
-    background-color: #C08B15;
-    color: #fff;
-    font-weight: bold;
-    padding: 10px;
-    transition: all .3s ease-in;
+  background-color: #c08b15;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  transition: all 0.3s ease-in;
 }
 
 .catering-hero-section button:hover {
-    background-color: #57400f;
-    color: #fff;
+  background-color: #57400f;
+  color: #fff;
 }
 
 .popular-builds {
-    padding: 40px 0;
-    color: #fff;
-    background-color: #786259;
+  padding: 40px 0;
+  color: #fff;
+  background-color: #786259;
+}
 
+.popular-builds h3 {
+  font-size: 40px;
 }
 
 .popular-builds .popular-builds-item {
-    background-color: #fff;
+  background-color: #fff;
+  margin-bottom: 20px;
 }
 
 .popular-builds .popular-builds-item .popular-builds-item-header {
-    color: #fff;
+  color: #fff;
 }
 
-.popular-builds .popular-builds-item .popular-builds-item-header .popular-builds-item-header-title {
-    bottom: 10px;
-    padding: 0 3px;
+.popular-builds
+  .popular-builds-item
+  .popular-builds-item-header
+  .popular-builds-item-header-title {
+  bottom: 1px;
+  padding: 0 3px;
+}
+
+.popular-builds
+  .popular-builds-item
+  .popular-builds-item-header
+  .popular-builds-item-header-title
+  h2 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.popular-builds
+  .popular-builds-item
+  .popular-builds-item-header
+  .popular-builds-item-header-title
+  h3 {
+  font-weight: bold;
+  font-size: 15px;
 }
 
 .popular-builds .popular-builds-item .popular-builds-item-header img {
-    width: 100%;
+  width: 100%;
 }
 
 .popular-builds .popular-builds-item .popular-builds-item-footer {
-    color: #000;
-    padding: 3px 10px;
+  color: #000;
+  padding: 3px 10px;
 }
 
 .popular-builds .popular-builds-item .popular-builds-item-footer button {
-    background-color: #C08B15;
-    color: #fff;
-    width: 100%;
-    font-weight: bold;
+  background-color: #c08b15;
+  color: #fff;
+  width: 100%;
+  font-weight: bold;
+  padding: 3px 30px;
+  margin-bottom: 10px;
 }
 
 .popular-builds .popular-builds-item .popular-builds-item-footer p {
-    font-size: 13px;
-    color: #9d8d80;
+  font-size: 13px;
+  color: #9d8d80;
 }
 
 .popular-builds .popular-builds-item .popular-builds-item-footer div p span {
-    font-size: 15px;
-    color: #000;
-    font-weight: bold;
+  font-size: 15px;
+  color: #000;
+  font-weight: bold;
 }
 
 .bulid-your-own {
-    background-color: #F2F2F1;
-    padding-top: 40px;
-    padding-bottom: 40px;
+  background-color: #f2f2f1;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .bulid-your-own h3 {
-    margin-top: -40px;
-    font-size: 150px;
-    color: #451400;
-    font-weight: bold
+  margin-top: -40px;
+  font-size: 130px;
+  color: #451400;
+  font-weight: bold;
+}
+
+.bulid-your-own h2 {
+  color: #451400;
+  font-weight: bold;
 }
 
 .bulid-your-own .single-value {
-    background-color: #fff;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+.bulid-your-own .van-value {
+  margin-bottom: 10px;
 }
 
 .bulid-your-own .best-values {
-    background-color: #C08B15;
-    color: #fff;
-    padding: 5px 10px;
-
+  background-color: #c08b15;
+  color: #fff;
+  padding: 5px 10px;
 }
 
 .bulid-your-own .bulid-your-single button {
-    background-color: #C08B15;
-    color: #fff;
-    font-weight: bold;
-    width: 100%;
+  background-color: #c08b15;
+  color: #fff;
+  font-weight: bold;
+  width: 100%;
 }
 
 .bulid-your-own .bulid-your-single img {
-    width: 100%;
+  width: 100%;
 }
 
 .chips-dips {
-    background-color: #E8E8E5;
+  background-color: #e8e8e5;
 }
 
 .chips-dips h2 {
-    color: #451400;
-    font-weight: bold;
-    padding-top: 40px;
-    padding-bottom: 40px;
+  color: #451400;
+  font-weight: bold;
+  padding-top: 40px;
+}
+
+.chips-dips span {
+  color: #b1a6a0;
+  margin-bottom: 10px;
+}
+
+.chips-dips p {
+  color: #9c6259;
+}
+
+.chips-dips b {
+  color: #571405;
+  font-size: 20px;
 }
 
 .chips-dips button {
-    background-color: #C08B15;
-    color: #fff;
-    font-weight: bold;
-    margin-top: 30px;
+  background-color: #c08b15;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 30px;
+  padding: 10px 30px;
+  transition: all 0.3s ease-in;
+}
+
+.chips-dips button span {
+  padding-right: 10px;
+  color: #fff;
+}
+
+.chips-dips button:hover {
+  background-color: #835e0f;
+  color: #fff;
 }
 
 .chips-dips img {
-    width: 60%;
+  width: 100%;
+  height: 400px;
 }
 
 .team-today {
-    color: #fff;
-    background-image: url('../images/group-order-large.jpg');
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 320px;
-    background-size: cover
+  color: #fff;
+  background-image: url("../images/group-order-large.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 320px;
+  background-size: cover;
 }
 
 .team-today a {
-    color: #C08B15;
-    font-weight: bold;
-    font-size: 20px;
-    text-decoration: none;
+  color: #c08b15;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
 }
+
+/* ######################### End Gatering Page ######################### */
+
+/* ######################### Start Rewards Page ######################### */
+.rewards-hero-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 150px;
+}
+
+.rewards-hero-section
+  .rewards-hero-section-intro
+  .rewards-hero-section-intro-title {
+  color: #ad2118;
+  padding: 10px 0;
+  font-size: 35px;
+  letter-spacing: 5px;
+}
+
+.rewards-hero-section
+  .rewards-hero-section-intro
+  .rewards-hero-section-intro-subtitle {
+  color: #451400;
+  font-weight: bold;
+  padding: 10px 0;
+  font-size: 55px;
+}
+
+.rewards-hero-section .rewards-hero-section-intro p,
+.rewards-hero-section .rewards-hero-section-intro p a {
+  font-size: 15px;
+  letter-spacing: 0.001px;
+  color: #571405;
+  font-weight: bold;
+}
+
+.rewards-hero-section .rewards-hero-section-intro button {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 20px 0;
+  color: #fff;
+  background-color: #ad2118;
+  border: 0;
+  border-radius: 0;
+  padding: 10px 40px;
+}
+
+.rewards-hero-section .rewards-hero-section-intro button:hover {
+  color: #000;
+  border: 1px solid #000;
+}
+
+.rewards-hero-section .rewards-hero-section-images {
+  background-image: url("../images/rewards-hero-section.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100% 100%;
+  background-position: center;
+  height: 100%;
+  margin-top: -100px;
+}
+
+@media (max-width: 780px) {
+  .rewards-hero-section .rewards-hero-section-images {
+    margin-top: 0;
+  }
+}
+
+.rewards-hero-section .rewards-hero-section-images img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.how-it-works {
+  padding: 40px 0;
+}
+
+.how-it-works .how-it-works-title {
+  font-size: 55px;
+  font-weight: bold;
+  color: #451400;
+}
+
+.how-it-works .how-it-works-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.how-it-works .how-it-works-item img {
+  min-width: 100%;
+}
+
+.how-it-works .how-it-works-item p {
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.all-new {
+  padding: 40px 0;
+}
+
+.all-new h3 {
+  color: #451400;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.all-new h2 {
+  color: #451400;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.all-new .all-new-item h4 {
+  color: rgb(69, 20, 0);
+  font-weight: bold;
+}
+
+.all-new .all-new-item p {
+  font-size: 15px;
+  font-weight: bolder;
+  padding: 20px 0;
+}
+
+.all-new-item img {
+  width: 100%;
+}
+
+.getting-rewarded {
+  padding: 40px 0;
+  background-image: url("../images/new-backgroundImage__Rambles.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.getting-rewarded h3 {
+  font-size: 45px;
+  font-weight: bolder;
+  color: rgb(69, 20, 0);
+  padding-bottom: 10px;
+}
+
+.getting-rewarded .getting-rewarded-stage h4 {
+  font-weight: bolder;
+  color: #451400;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.getting-rewarded .getting-rewarded-stage p {
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.getting-rewarded .getting-rewarded-stage p a {
+  color: #ad2118;
+}
+
+.getting-rewarded .getting-rewarded-stage p a:hover {
+  color: #000;
+}
+
+.getting-rewarded .getting-rewarded-stage img {
+  width: 100%;
+}
+
+.questions {
+  padding: 40px 0;
+  background-color: #f5f3f2;
+}
+
+.questions h3 {
+  color: #451400;
+  font-weight: bolder;
+  font-size: 35px;
+}
+
+.questions h4 a {
+  color: #451400;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.questions button {
+  border: 2px solid #451400;
+  border-radius: 0;
+  color: #451400;
+  font-weight: bold;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.questions button:hover {
+  border: 4px solid #451400;
+}
+
+.questions button:hover span {
+  transition: all 0.3s ease-in-out;
+  border-bottom: 2px solid #451400;
+}
+
+/* ######################### End Rewards Page ######################### */
+
+/* ######################### Start Our Values ######################### */
+.hero-section-our-values {
+  margin-top: 200px;
+  background-color: #ece3de;
+  padding-top: 150px;
+  padding-bottom: 70px;
+}
+
+.hero-section-our-values .hero-section-our-values-image {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.hero-section-our-values .hero-section-our-values-image svg {
+  width: 50%;
+  margin: auto;
+}
+
+.being-real {
+  background-color: #ece3de;
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
+
+.being-real .being-real-image {
+  margin-left: -100px;
+}
+
+.being-real .being-real-text {
+  padding-top: 60px;
+  margin-bottom: 20px;
+}
+
+.being-real .being-real-text img {
+  margin-bottom: 30px;
+}
+
+.being-real .being-real-text p {
+  color: #3f1d15;
+  font-size: 25px;
+  line-height: 45px;
+}
+
+.being-real .being-real-text p span {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.food {
+  background-color: #ece3de;
+}
+
+.beingRealMeans {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.beingRealMeans .beingRealMeansImage {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.beingRealMeans .beingRealMeansImage svg {
+  width: 50%;
+  margin: auto;
+}
+
+.beingRealMeans p {
+  font-size: 30px;
+  color: #451400;
+}
+
+.beingRealMeans .beingRealMeansText {
+  width: 50%;
+  margin: auto;
+}
+
+.beingRealMeans .beingRealMeansText span {
+  color: #786259;
+  font-size: 16px;
+}
+
+.foods-tricker {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.foods-tricker .food-tricker-item {
+  transition: all 0.5s ease-in;
+}
+
+.foods-tricker .food-tricker-item:hover .food-tricker-item-image {
+  transition: all 0.2s ease-in;
+  margin-bottom: 10px;
+  border-radius: 100%;
+  background-color: #f5ebe3;
+}
+
+.foods-tricker .food-tricker-item p {
+  transition: all 0.5s ease-in;
+  font-weight: bold;
+  display: none;
+}
+
+.foods-tricker .food-tricker-item:hover p {
+  transition: all 0.5s ease-in;
+  display: block;
+}
+
+.supporting-people {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.supporting-people .supporting-people-text {
+  color: #47170a;
+  margin-top: 60px;
+}
+
+.supporting-people .supporting-people-text p {
+  font-size: 20px;
+  margin-bottom: 90px;
+  color: #47170a;
+}
+
+.supporting-people .supporting-people-text p span {
+  font-weight: bold;
+}
+
+.supporting-people .supporting-people-text a {
+  color: #47170a;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 17px;
+}
+.our-people {
+  background-image: url("../images/our-vlaues/our-people-lg.jpg");
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.FightingForOurPlanet {
+  padding-top: 40px;
+  background-color: #efe8e2;
+}
+
+.FightingForOurPlanet .FightingForOurPlanetItme {
+  margin-bottom: 10px;
+}
+
+.FightingForOurPlanet a {
+  text-decoration: none;
+  color: #47170a;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.FightingForOurPlanet::after {
+  content: "";
+  background-image: url("../images/our-vlaues/tear-desktop.png");
+  background-position: center top;
+  display: block;
+  height: 160px;
+  width: calc(100% + 2rem);
+  margin-left: -1rem;
+  position: relative;
+}
+
+.lastSectionOrderNow{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.lastSectionOrderNowItem{
+  margin-bottom: 10px;
+}
+
+.lastSectionOrderNowItem a{
+  background-color: #451400;
+  color: #fff;
+  font-weight: bold;
+  padding:15px 40px;
+  margin-top: 50px;
+}
+.lastSectionOrderNowItem a:hover{
+  background-color: #1B0800;
+  color: #fff;
+}
+/* ######################### End Our Values ######################### */
